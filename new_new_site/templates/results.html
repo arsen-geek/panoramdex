@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- Сайт сделан на основе шаблона  https://designhooks.com/freebies/nava-clean-responsive-html-template/-->
+      <title>Результаты | Панорамдекс</title>
+      <meta charset="utf-8">
+      <meta name="description" content="Search Panoramdex" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href='static/css/screen.css'/>
+   </head>
+
+   <body class="home" id="page" style="opacity: 1 !important;">
+
+
+    <h1 style="margin: 30px; margin-bottom: 0;">{% block title %} Результаты поиска {% endblock %}</h1>
+
+{% block content %}
+    <table class="table" style="margin: 30px; border-collapse: separate;border-spacing: 5px 5px;">
+        {% for i in range(0, results|length) %}
+            <tr>
+                <td><a href="{{ results[i][0] }}" target="_blank" style="color: #e7434e;">{{ results[i][0] }}</a></td>
+                <td>{{ results[i][1] }}</td>
+                <td>{{ results[i][2] }}</td>
+                <td>{{ results[i][3] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
+
+
+</body>
+</html>
