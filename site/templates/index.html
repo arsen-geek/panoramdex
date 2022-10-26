@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- Сайт сделан на основе шаблона  https://designhooks.com/freebies/nava-clean-responsive-html-template/-->
+      <title>Панорамдекс</title>
+      <meta charset="utf-8">
+      <meta name="description" content="Search Panoramdex" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700" rel="stylesheet" />
+      <link href="css/screen.css" rel="stylesheet" />
+   </head>
+
+   <body class="home" id="page">
+      <!-- Header -->
+      <header class="main-header">
+         <div class="container">
+            <div class="header-content">
+               <a href="index.html">
+                  <!--<img src="img/site-identity.png" alt="site identity" />-->
+               </a>
+
+               <nav class="site-nav">
+                  <ul class="clean-list site-links">
+                     <li>
+                        <a href="https://github.com/arsen-geek/panoramdex" target="_blank">Гитхаб</a>
+                     </li>
+                     <li>
+                        <a href="https://panorama.pub/" target="_blank">Сайт Панорамы</a>
+                     </li>
+                  </ul>
+
+                  <!--<a href="#" class="btn btn-outlined">Sign up</a>-->
+               </nav>
+            </div>
+         </div>
+      </header>
+
+      <!-- Main Content -->
+      <div class="content-box">
+         <!-- Hero Section -->
+         <section class="section section-hero">
+            <div class="hero-box">
+               <div class="container">
+                  <div class="hero-text align-center">
+                     <h1>Панорамдекс</h1>
+                     <p>опережая события</p>
+                  </div>
+
+                  <form class="destinations-form">
+                     <div class="input-line">
+                        <input type="text" name="destination" value="" class="form-input check-value" placeholder="Чего надобно?" />
+                        <button type="button" name="destination-submit" class="form-submit btn btn-special">Найти</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+
+         <!-- Destinations Section -->
+         <section class="section section-destination">
+            <!-- Title -->
+            <div class="section-title" style="padding-top: 40px !important">
+               <div class="container">
+                  <h2 class="title">Как можно делать запросы</h2>
+                  <p class="sub-title" align="left" style="margin-bottom:40px"><b>панорама</b> - все предложения, где это слово встречается в любой форме.
+                  <br><b>"панорамой"</b> — все предложения только с этой формой
+                  <br><b>знать+NOUN</b> - нужно найти все предложения, где встречается существительное "знать" (первая часть — лемма)
+                  <br><b>NOUN</b> - все предложения с существительными
+                  <br>
+                  <br>Мы используем теги из <a href="https://pymorphy2.readthedocs.io/en/stable/user/grammemes.html" target="_blank" style="color: #e7434e">pymorphy2 (OpenCorpora)</a>. 
+                  </p>
+
+                  <ul>
+    {% for title, text in news.items() %}
+        <li>{{ title }} - {{ text }}</li>
+    {% endfor %}
+               </ul>
+               </div>
+            </div>
+
+      <!-- Scripts -->
+      <script src="js/jquery.js"></script>
+      <script src="js/functions.js"></script>
+   </body>
+</html>
