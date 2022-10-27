@@ -7,4 +7,6 @@
 
 [Ссылка на наш сайт](http://philinguistic.pythonanywhere.com/)
 
+[Ссылка на нашу презентацию](https://docs.google.com/presentation/d/1dRbAPyo9SPdDU8avGEoVypENcK6W2qEeHJvO2KFzslQ/edit?usp=sharing)
+
 #### Выполнили: Александра Нужненко, Анастасия Иванова, Арсений Анисимов, Филипп Бурлаков
