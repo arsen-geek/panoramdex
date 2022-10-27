@@ -103,7 +103,7 @@ def main_search(input_string, corpus_json):
 
     print('search_tokens', search_tokens, 'search_tags', search_tags, 'search_lemmas', search_lemmas, search_types)
 
-    # поиск
+        # поиск
     if len(search_tokens) > 0:
         for text in data:
             for sent in text["sentences"]:
@@ -111,18 +111,16 @@ def main_search(input_string, corpus_json):
                     seq = []
                     for m in range(len(search_tokens)):
                         if search_types[m] == 'qoutes':
-                            if search_tokens[m] in sent["words"][j + m]["word"]:
+                            if search_tokens[m] == sent["words"][j + m]["word"]:
                                 seq.append(sent["words"][j + m]["word"])
                         elif search_types[m] == 'word_and_tag':
-                            if search_lemmas[m] in sent["words"][j + m]["lemma"] and search_tags[m] in \
-                                    sent["words"][j + m]["POS"]:
+                            if search_lemmas[m] in sent["words"][j + m]["lemma"] and search_tags[m] in sent["words"][j + m]["POS"]:
                                 seq.append(sent["words"][j + m]["word"])
                         elif search_types[m] == 'word':
-                            if search_lemmas[m] in sent["words"][j + m]["lemma"] or search_tokens[m] in \
-                                    sent["words"][j + m]["word"]:
+                            if search_lemmas[m] in sent["words"][j + m]["lemma"] or search_tokens[m] == sent["words"][j + m]["word"]:
                                 seq.append(sent["words"][j + m]["word"])
                         elif search_types[m] == 'tag':
-                            if search_tags[m] in sent["words"][j + m]["POS"]:
+                            if search_tags[m] == sent["words"][j + m]["POS"][0]:
                                 seq.append(sent["words"][j + m]["word"])
                         else:
                             break
