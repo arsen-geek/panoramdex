@@ -138,8 +138,4 @@ def main_search(input_string, corpus_json):
     if answer == []:
         answer = [['Простите, в нашем корпусе ничего не нашлось по вашему запросу! Проверьте запрос на корректность.']]
     return answer
-
-
-if __name__ == '__main__':
-    app.run()
     
