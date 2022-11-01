@@ -1,7 +1,7 @@
 # NLP final project: searching in news' corpora
 
 This is the search engine for the corpora of fictional news'.
-The corpora was got via parsing of "scientific" news on the ["Panorama" site](https://panorama.pub/science).
+The data for the corpora was collected via parsing of "scientific" news on the ["Panorama" site](https://panorama.pub/science).
 
 * making corpora - the code for corpora creation (news' parsing, morphological analysis, news' database, json corpora, chrome driver)
 
