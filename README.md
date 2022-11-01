@@ -1,13 +1,14 @@
 # NLP final project: searching in news' corpora
 
-TКорпус, по которому производится поиск, собран на основе новостей в разделе ["Наука" на сайте Панорамы](https://panorama.pub/science) - фейкового новостного агентства.
+This is the search engine for the corpora of fictional news'.
+The corpora was got via parsing of "scientific" news on the ["Panorama" site](https://panorama.pub/science).
 
 * making corpora - the code for corpora creation (news' parsing, morphological analysis, news' database, json corpora, chrome driver)
 
 * new_new_site - files needed for the search engine and the site (the app, json corpora, disign files)
 
-[Our site link (works in Russian)](http://philinguistic.pythonanywhere.com/)
+[Link to out site (works in Russian)](http://philinguistic.pythonanywhere.com/)
 
-[Our presentation link (in Russian)](https://docs.google.com/presentation/d/1dRbAPyo9SPdDU8avGEoVypENcK6W2qEeHJvO2KFzslQ/edit?usp=sharing)
+[Link to our presentation (in Russian)](https://docs.google.com/presentation/d/1dRbAPyo9SPdDU8avGEoVypENcK6W2qEeHJvO2KFzslQ/edit?usp=sharing)
 
 #### The team: Alexandra Nuzhnenko, Anastasiia Ivanova, Arsenii Anisimov, Philipp Burlakov
